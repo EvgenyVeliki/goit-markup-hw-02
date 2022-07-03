@@ -156,6 +156,52 @@ body {
   color: var(--p-txt-cl);
 }
 
+/* Main Portfolio*/
+.main {
+  background-color: var(--line-bg-cl);
+}
+
+.main-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--maim-txt-cl);
+  background-color: var(--our-team-bg-cl);
+  cursor: pointer;
+}
+.main-button-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--header-bg-cl);
+  background-color: var(--button-bg-cl);
+  cursor: pointer;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--maim-txt-cl);
+}
+
+.main-txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--p-txt-cl);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--button-bg-cl);
+  color: var(--header-bg-cl);
+}
+
 /* Footer */
 .logo-link-footer {
   font-weight: 700;
@@ -195,4 +241,9 @@ body {
 
 .contacts-adress {
   font-style: normal;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--header-bg-cl);
 }
