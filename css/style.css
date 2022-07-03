@@ -170,6 +170,7 @@ body {
   background-color: var(--our-team-bg-cl);
   cursor: pointer;
 }
+
 .main-button-title {
   font-weight: 500;
   font-size: 16px;
@@ -180,12 +181,14 @@ body {
   cursor: pointer;
 }
 
-.main-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--maim-txt-cl);
+.main-button-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--header-bg-cl);
+  background-color: var(--button-bg-cl);
+  cursor: pointer;
 }
 
 .main-txt {
