@@ -13,7 +13,8 @@
   --header-bg-cl: #ffffff;
   --button-bg-cl: #2196f3;
   --line-bg-cl: #e5e5e5;
-  /* Other colors */
+  --button-main-bg-cl: #188ce8;
+  /* Other color */
 }
 
 /* Reset styles */
@@ -28,10 +29,28 @@
 body {
   font-family: var(--main-front);
   color: var(--maim-txt-cl);
+  background-color: var(--header-bg-cl);
+  font-size: 14px;
+  letter-spacing: 0.03;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Hedear section */
 .logo-link {
+  font-family: var(--secondary-front);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -94,14 +113,14 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--header-bg-cl);
   background-color: var(--button-bg-cl);
   cursor: pointer;
 }
 
 .hero button:hover,
 .hero button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-main-bg-cl);
 }
 
 .hero button {
@@ -157,11 +176,9 @@ body {
 }
 
 /* Main Portfolio*/
-.main {
-  background-color: var(--line-bg-cl);
-}
 
 .main-button {
+  font-family: var(--main-front);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -172,16 +189,7 @@ body {
 }
 
 .main-button-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  letter-spacing: 0.03em;
-  color: var(--header-bg-cl);
-  background-color: var(--button-bg-cl);
-  cursor: pointer;
-}
-
-.main-button-title {
+  font-family: var(--main-front);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -192,11 +200,17 @@ body {
 }
 
 .main-txt {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--p-txt-cl);
+}
+.main-title-txt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--maim-txt-cl);
 }
 
 .main-button:hover,
@@ -207,6 +221,7 @@ body {
 
 /* Footer */
 .logo-link-footer {
+  font-family: var(--secondary-front);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
