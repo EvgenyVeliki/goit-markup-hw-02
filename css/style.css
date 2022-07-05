@@ -1,9 +1,9 @@
 :root {
   /* Founts */
   --main-front: 'Roboto', sans-serif;
-  --secondary-front: 'Ralewey', sans-serif;
+  --secondary-front: 'Raleway', sans-serif;
   /* Text colors */
-  --contacts-txt-cl: #ffffff99;
+  --contacts-txt-cl: rgba(255, 255, 255, 0.6);
   --maim-txt-cl: #212121;
   --p-txt-cl: #757575;
   --logo-txt-cl: #000000;
@@ -31,7 +31,7 @@ body {
   color: var(--maim-txt-cl);
   background-color: var(--header-bg-cl);
   font-size: 14px;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -107,7 +107,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero button {
+.hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -118,12 +118,12 @@ body {
   cursor: pointer;
 }
 
-.hero button:hover,
-.hero button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--button-main-bg-cl);
 }
 
-.hero button {
+.hero-button {
   border: none;
 }
 
@@ -254,7 +254,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contacts-txt-cl);
 }
 
 .contacts-adress {
